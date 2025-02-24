@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <TableComponent msg="Welcome to Your Vue.js App"/>
+    <BarChartComponent/>
+    <TableComponent />
   </div>
 </template>
 
 <script>
-import TableComponent from './components/TableComponent.vue'
+import TableComponent from './components/TableComponent.vue';
+import BarChartComponent from './components/BarChartComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    TableComponent
+    TableComponent,
+    BarChartComponent
   }
 }
 </script>

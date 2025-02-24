@@ -1,6 +1,12 @@
 <template>
-  <v-data-table :headers="headers" :items="mockData" :sort-by="['weight']" :items-per-page=mockData.length hide-default-footer
-    :sort-desc="[false, true]" class="elevation-1"></v-data-table>
+      <div>
+        <div>
+        <p class="text">Table List - Sorted with Weight</p>
+        </div>
+        <v-data-table :headers="headers" :items="mockData" :sort-by="['weight']" :items-per-page=mockData.length hide-default-footer
+        :sort-desc="[false, true]" class="elevation-1"></v-data-table>
+    </div>
+ 
 </template>
 <script>
 import { mockData } from "@/mock-data/mockdata";
@@ -45,4 +51,10 @@ li {
 a {
   color: #42b983;
 }
+
+.text {
+    font-size: 20px;
+    font-weight: bolder;
+
+  }
 </style>
